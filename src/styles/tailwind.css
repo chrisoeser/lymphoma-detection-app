@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+/* Mobile-first adjustments */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Custom styles for canvas visualizations */
+.heatmap-canvas {
+  image-rendering: pixelated;
+}
+
+/* Custom scrollbar for feature map list */
+.feature-map-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.feature-map-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.feature-map-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.feature-map-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
