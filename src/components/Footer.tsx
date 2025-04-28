@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             </p>
         <div className="flex justify-center mt-3 space-x-4">
           <a 
-            href="https://github.com/yourusername/lymphoma-detection-app" 
+            href="https://github.com/chrisoeser/lymphoma-detection-app" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-primary-600 transition-colors"
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             </svg>
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/christopher-oeser/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-primary-600 transition-colors"
