@@ -6,6 +6,7 @@ import ResultsView from './components/ResultsView';
 import VisualizationPanel from './components/VisualizationPanel';
 import LoadingIndicator from './components/LoadingIndicator';
 import ImageAnalyzer from './components/ImageAnalyzer';
+import SimpleExamples from './components/Examples';
 import { useModel } from './hooks/useModel';
 import './styles/tailwind.css';
 
@@ -49,7 +50,6 @@ const App: React.FC = () => {
     setPredictionResult(null);
     resetError();
   };
-
   
   const handleAnalysisComplete = (result: any) => {
     setPredictionResult(result);
@@ -78,14 +78,21 @@ const App: React.FC = () => {
                 Upload Lymphoma Image for Analysis
               </h2>
               {!imageFile || predictionResult ? (
-                <ImageUploader 
-                  onImageUpload={handleImageUpload} 
-                  onReset={handleReset}
-                  imagePreview={imagePreview}
-                  hasResult={!!predictionResult}
-                  onPredict={() => {}}
-                  isPredicting={false}
-                />
+                <>
+                  <ImageUploader 
+                    onImageUpload={handleImageUpload} 
+                    onReset={handleReset}
+                    imagePreview={imagePreview}
+                    hasResult={!!predictionResult}
+                    onPredict={() => {}}
+                    isPredicting={false}
+                  />
+                  
+                  {/* Simple examples gallery */}
+                  {!imagePreview && (
+                    <SimpleExamples onSelectExample={handleImageUpload} />
+                  )}
+                </>
               ) : (
                 <div className="flex flex-col">
                   <div className="flex justify-center mb-4">

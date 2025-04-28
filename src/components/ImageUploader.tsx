@@ -101,17 +101,13 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({
           </div>
           
           <div className="flex flex-col sm:flex-row gap-3 mt-2 justify-center">
-            {!hasResult && (
+            {!hasResult && !isPredicting && (
               <button
                 onClick={onPredict}
-                disabled={isPredicting}
-                className={`px-4 py-2 rounded-md text-white font-medium
-                  ${isPredicting 
-                    ? 'bg-primary-400 cursor-not-allowed' 
-                    : 'bg-primary-600 hover:bg-primary-700'
-                  }`}
+                className="px-4 py-2 rounded-md text-white font-medium
+                  bg-primary-600 hover:bg-primary-700"
               >
-                {isPredicting ? 'Analyzing...' : 'Analyze Image'}
+                Analyze Image
               </button>
             )}
             

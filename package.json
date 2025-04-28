@@ -2,7 +2,7 @@
     "name": "lymphoma-detection-app",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://yourusername.github.io/lymphoma-detection-app",
+    "homepage": "https://chrisoeser.github.io/lymphoma-detection-app",
     "dependencies": {
         "@tensorflow/tfjs": "^4.22.0",
         "react": "^18.3.1",
