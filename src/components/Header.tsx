@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center max-w-4xl">
         <div className="flex items-center">
         <img 
-            src={`${process.env.PUBLIC_URL}/microscope.png`} 
+            src={`${process.env.PUBLIC_URL}/green-microscope.png`} 
             alt="Microscope" 
             className="w-16 h-16"
             />
