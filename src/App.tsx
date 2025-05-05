@@ -124,7 +124,7 @@ const App: React.FC = () => {
               )}
             </div>
             
-            <QRCode />
+            {!imagePreview && <QRCode />}
 
             {predictionResult && (
               <>
