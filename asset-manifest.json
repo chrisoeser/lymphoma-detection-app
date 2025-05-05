@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/lymphoma-detection-app/static/css/main.21e96d14.css",
-    "main.js": "/lymphoma-detection-app/static/js/main.14d84b52.js",
+    "main.css": "/lymphoma-detection-app/static/css/main.a52a5970.css",
+    "main.js": "/lymphoma-detection-app/static/js/main.94e743f0.js",
     "index.html": "/lymphoma-detection-app/index.html",
-    "main.21e96d14.css.map": "/lymphoma-detection-app/static/css/main.21e96d14.css.map",
-    "main.14d84b52.js.map": "/lymphoma-detection-app/static/js/main.14d84b52.js.map"
+    "main.a52a5970.css.map": "/lymphoma-detection-app/static/css/main.a52a5970.css.map",
+    "main.94e743f0.js.map": "/lymphoma-detection-app/static/js/main.94e743f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.21e96d14.css",
-    "static/js/main.14d84b52.js"
+    "static/css/main.a52a5970.css",
+    "static/js/main.94e743f0.js"
   ]
 }
