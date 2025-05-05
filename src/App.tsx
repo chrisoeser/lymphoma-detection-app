@@ -7,6 +7,7 @@ import VisualizationPanel from './components/VisualizationPanel';
 import LoadingIndicator from './components/LoadingIndicator';
 import ImageAnalyzer from './components/ImageAnalyzer';
 import SimpleExamples from './components/Examples';
+import QRCode from './components/QRcode';
 import { useModel } from './hooks/useModel';
 import './styles/tailwind.css';
 
@@ -122,6 +123,8 @@ const App: React.FC = () => {
                 </div>
               )}
             </div>
+            
+            <QRCode />
 
             {predictionResult && (
               <>

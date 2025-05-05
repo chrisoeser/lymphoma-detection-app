@@ -14,19 +14,19 @@ const SimpleExamples: React.FC<ExamplesProps> = ({ onSelectExample }) => {
       id: 'cll',
       name: 'CLL Example',
       description: 'Chronic Lymphocytic Leukemia',
-      imagePath: 'examples/lymph_cll_0044.jpg'
+      imagePath: `${process.env.PUBLIC_URL}/examples/lymph_cll_0044.jpg`
     },
     {
       id: 'fl',
       name: 'FL Example',
       description: 'Follicular Lymphoma',
-      imagePath: 'examples/lymph_fl_0024.jpg'
+      imagePath: `${process.env.PUBLIC_URL}/examples/lymph_fl_0024.jpg`
     },
     {
       id: 'mcl',
       name: 'MCL Example',
       description: 'Mantle Cell Lymphoma',
-      imagePath: 'examples/lymph_mcl_0048.jpg'
+      imagePath: `${process.env.PUBLIC_URL}/examples/lymph_mcl_0048.jpg`
     }
   ];
 
